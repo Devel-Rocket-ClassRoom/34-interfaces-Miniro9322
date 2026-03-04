@@ -1,0 +1,4 @@
+﻿interface IRepository
+{
+    void Get();
+}

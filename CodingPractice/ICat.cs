@@ -1,0 +1,4 @@
+﻿interface ICat
+{
+    void Eat();
+}
