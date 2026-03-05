@@ -30,12 +30,13 @@ class Monster : IAttacker, IDefender
         CurrentHp -= damage;
         if( CurrentHp < 0)
         {
+            IsDead = true;
             CurrentHp = 0;
         }
         
 
         Console.WriteLine($"({Name} HP: {CurrentHp}/{MaxHp})");
-        if (CurrentHp <= 0)
+        if (IsDead == true)
         {
             Console.WriteLine($"{Name}(이/가) 쓰러졌습니다!");
         }
